@@ -1,0 +1,411 @@
+//codul html, css
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+
+
+  <style>
+      /* Stilizare navbar */
+  .navbar {
+    background-color: #333;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .navbar-brand {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .navbar-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar-nav li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .navbar-nav li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .navbar-nav li a:hover {
+    background-color: #555;
+  }
+
+    /* Stilizarea personalizată a caruselului */
+    .carousel-item {
+      background-size: cover;
+      background-position: center;
+      height: 500px;
+    }
+
+    .carousel-caption {
+      bottom: 50%;
+      transform: translateY(50%);
+    }
+
+    .carousel-caption h3 {
+      font-size: 40px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .carousel-caption p {
+      font-size: 20px;
+    }
+.zoom-effect {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+<style>
+  #contacte {
+    background-color: #f8f8f8;
+    padding: 80px 0;
+  }
+
+  #contacte h2 {
+    margin-bottom: 40px;
+    color: #333;
+  }
+
+  #contacte .form-group label {
+    color: #333;
+    font-weight: bold;
+  }
+
+  #contacte .form-control {
+    border-radius: 0;
+  }
+
+  #contacte button[type="submit"] {
+    background-color: #EECA05;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  #contacte button[type="submit"]:hover {
+    background-color: #e6bd00;
+  }
+
+  #contacte .col-md-6 {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+  }
+
+  #contacte .col-md-6 h4 {
+    color: #333;
+    margin-top: 0;
+  }
+
+  #contacte .col-md-6 p {
+    color: #777;
+  }
+
+  #harta {
+    height: 300px;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+  }
+    .form-background {
+    background-color: #F8F8F8;
+  }
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  ul li {
+  margin-bottom: 10px;
+  list-style-type: none;
+}
+
+ul li i {
+  margin-right: 10px;
+}
+
+
+</style>
+
+
+
+
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="https://blog.floria.ro/wp-content/uploads/2021/01/floare-de-lotus-floria.jpg" width="35" height="40"  alt="Logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#despre-noi">Acasă</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#servicii">Despre Noi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#details">Detalii</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacte">Galerie</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacte">Contacte</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="background-image: url('https://blog.floria.ro/wp-content/uploads/2021/01/floare-de-lotus-floria.jpg');">
+        <div class="carousel-caption">
+          <h3>Bun venit pe site-ul nostr</h3>
+                <p>Explorați frumusețea florilor</p>
+                <a href="#" class="btn btn-primary">Aflați mai multe</a>
+
+    </div>
+  </div>
+  <div class="carousel-item" style="background-image: url('https://blog.floria.ro/wp-content/uploads/2021/01/floare-de-lotus-floria.jpg');">
+    <div class="carousel-caption">
+      <h3>Descoperiți varietatea de flori</h3>
+      <p>Veți găsi flori pentru orice ocazie</p>
+    </div>
+  </div>
+  <div class="carousel-item" style="background-image: url('https://blog.floria.ro/wp-content/uploads/2021/01/floare-de-lotus-floria.jpg');">
+    <div class="carousel-caption">
+      <h3>Adăugați culoare în viața voastră</h3>
+      <p>Descoperiți colecția noastră de flori</p>
+    </div>
+  </div>
+</div>
+<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <span class="sr-only">Previous</span>
+</a>
+<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <span class="sr-only">Next</span>
+</a>
+  </div>
+  
+     <section id="despre-noi" class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <img src="https://www.stonemania.ro/images/companies/1/Blog/Floarea%20de%20lotus-roz.jpg?1618310596844" class="img-fluid" alt="Despre Noi">
+      </div>
+      <div class="col-lg-6">
+        <h2 class="section-title mb-4">Despre Noi</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae lectus sed ligula laoreet consectetur. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris cursus posuere leo, id condimentum justo maximus eu. Vestibulum cursus scelerisque magna, sed tempor enim congue a.</p>
+        <p>Praesent semper ligula non lacus rutrum, a lacinia ex dapibus. Nunc vitae commodo mauris. Fusce sit amet justo a neque tempor eleifend ut sed urna. Fusce hendrerit diam mi, non scelerisque ipsum malesuada ac.</p>
+        <ul>
+  <li><i class="fas fa-eye"></i> Informație 1</li>
+  <li><i class="fas fa-sun"></i> Informație 2</li>
+  <li><i class="fas fa-star"></i> Informație 3</li>
+</ul>
+      </div>
+    
+
+    </div>
+  </div>
+</section>
+
+<section id="servicii" class="py-5">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">Servicii</h2>
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="card zoom-effect">
+          <img src="https://naturavindecatoare.ro/wp-content/uploads/2020/12/lotusalbastru-720x600.png" class="card-img-top" alt="Serviciu 1">
+          <div class="card-body">
+            <h5 class="card-title">Serviciu 1</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card zoom-effect">
+          <img src="https://naturavindecatoare.ro/wp-content/uploads/2020/12/lotusalbastru-720x600.png" class="card-img-top" alt="Serviciu 2">
+          <div class="card-body">
+            <h5 class="card-title">Serviciu 2</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card zoom-effect">
+          <img src="https://naturavindecatoare.ro/wp-content/uploads/2020/12/lotusalbastru-720x600.png" class="card-img-top" alt="Serviciu 3">
+          <div class="card-body">
+            <h5 class="card-title">Serviciu 3</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="galerie" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Galerie de imagini</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://secretele.com/wp-content/uploads/2018/10/floare-lotus-spiritualitate.jpg" class="card-img-top" alt="Imagine 1">
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://secretele.com/wp-content/uploads/2018/10/floare-lotus-spiritualitate.jpg" class="card-img-top" alt="Imagine 2">
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://secretele.com/wp-content/uploads/2018/10/floare-lotus-spiritualitate.jpg" class="card-img-top" alt="Imagine 3">
+        </div>
+      </div>
+      <!-- Adăugați mai multe carduri pentru imagini suplimentare -->
+    </div>
+  </div>
+</section>
+
+<section id="contacte" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Contacte</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <h4>Formular de contact</h4>
+        <form action="bo.php" method="POST" class="form-background">
+          <div class="form-group">
+            <label for="nume">Nume</label>
+            <input type="text" class="form-control" id="nume" name="nume" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="mesaj">Mesaj</label>
+            <textarea class="form-control" id="mesaj" name="mesaj" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Trimite</button>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <h4>Detalii de contact</h4>
+        <p>Email: info@example.com</p>
+        <p>Telefon: 0123456789</p>
+        <h4>Locație</h4>
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d86998.48158435551!2d28.702897297265604!3d47.04606730000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97cff0bb3078b%3A0x5ef85ec21761c944!2zTGljZXVsIFRlb3JldGljIOKAnsiYdGVmYW4gY2VsIE1hcmXigJ0!5e0!3m2!1sro!2s!4v1687092663019!5m2!1sro!2s" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2023 Pelin Natalia. Toate drepturile rezervate.</p>
+    <p>
+      <a href="#">Termeni și condiții</a>
+      <a href="#">Politica de confidențialitate</a>
+      <a href="#">Harta site</a>
+    </p>
+  </div>
+</footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+
+//codul php baza de date
+<?php
+$server = "localhost";
+$user = "root";
+$password = "";
+$db = "floare";
+
+$conn = new mysqli($server, $user, $password, $db);
+if ($conn->connect_error) {
+  echo "Conexiunea esuată: " . $conn->connect_error;
+  die();
+}
+
+// Verificarea dacă formularul a fost trimis
+$nume = isset($_POST['nume']) ? $_POST['nume'] : '';
+$email = isset($_POST['email']) ? $_POST['email'] : '';
+$mesaj = isset($_POST['mesaj']) ? $_POST['mesaj'] : '';
+
+// Inserarea datelor în baza de date
+$sql = "INSERT INTO flori (nume, email, mesaj) VALUES ('$nume', '$email', '$mesaj')";
+if ($conn->query($sql) === TRUE) {
+    echo "Datele au fost inserate cu succes!";
+} else {
+    echo "Eroare la inserarea datelor: " . $conn->error;
+}
+
+// Închiderea conexiunii la baza de date
+$conn->close();
+?>
+
+
+
+
